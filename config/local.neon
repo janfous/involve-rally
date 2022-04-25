@@ -1,0 +1,7 @@
+parameters:
+
+
+database:
+    dsn: 'mysql:host=localhost;dbname=rally_db'
+    user: 'root'
+    password: 'root'
