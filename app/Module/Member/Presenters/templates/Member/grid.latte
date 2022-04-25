@@ -1,0 +1,21 @@
+{block content}
+	<link rel="stylesheet" type="text/css" href="{$basePath}/style/homepage/default.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/style/Member/grid.css">	
+	
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Role</th>
+		</tr>
+		{foreach $members as $member} 
+			<tr>
+				<td>{$member->member_id}</td>
+				<td>{$member->firstname}</td>
+				<td>{$member->lastname}</td>
+				<td>{$member->role_label}</td>
+			</tr>
+		{/foreach}
+	
+	</table>

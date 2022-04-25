@@ -1,0 +1,26 @@
+{block content}
+	<link rel="stylesheet" type="text/css" href="{$basePath}/style/homepage/default.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/style/Team/grid.css">		
+	
+	<table class="table" id="team_grid">
+			<th>Team ID</th>
+			<th>Team Name</th>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Role</th>
+		</tr>
+		{foreach $teams as $team} 
+			<tr class="row">
+				<td class="row_id">{$team->team_id}</td>
+				<td>{$team->team_name}</td>
+				<td>{$team->firstname}</td>
+				<td>{$team->lastname}</td>
+				<td>{$team->role_label}</td>
+			</tr>
+		{/foreach}
+	
+	</table>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="{$basePath}/js/Team/grid.js"> 

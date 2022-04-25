@@ -1,0 +1,9 @@
+services:
+	- App\Router\RouterFactory::createRouter
+	
+	role:
+		type: App\Module\Role\Role
+	member:
+		type: App\Module\Member\Member
+	team:
+		type: App\Module\Team\Team
